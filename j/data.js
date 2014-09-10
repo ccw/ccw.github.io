@@ -1,6 +1,33 @@
-var indices = ['20090514', '20090513', '20090508', '20090501', '20081124', '20081115'];
+var indices = ['20140910', '20090514', '20090513', '20090508', '20090501', '20081124', '20081115'];
 
 var blogs = {
+    '20140910': {
+        style: {
+            width: '334px', 
+            height: '400px',
+            background: '#FFF url("https://38.media.tumblr.com/271301eff3600516c92dec120f3d8c2b/tumblr_nbp5otcjXT1qzgyeso1_500.jpg") 20% 10% no-repeat'
+        },
+        title: {
+            value: ['Yes, Ma\'am'],
+            style: {
+                position: 'relative',
+                top: '20px', 
+                right: '20px', 
+                textAlign: 'right',
+                color: 'white' 
+            }
+        },
+        content: {
+            value: ['we shall play together!'],
+            style: {
+                position: 'relative',
+                top: '35px',
+                right:'20px', 
+                textAlign:'right',
+                color: '#cccccc'
+            }
+        },
+    },
     '20090514': {
         style: {
             width: '334px', 
@@ -8,7 +35,7 @@ var blogs = {
             background: '#FFF url("http://lh4.ggpht.com/_z-SGyFvIzXc/ShO-EFJcjgI/AAAAAAAAAkg/4XiVMMwgu64/s400/IMG_0117.JPG") no-repeat 0'
         },
         title: {
-            value: [React.DOM.br(), 'Little Alley'],
+            value: ['Little Alley'],
             style: {
                 position: 'relative',
                 top: '20px', 

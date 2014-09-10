@@ -5,12 +5,19 @@
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 @import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
 
-#statement { font-family: 'Inconsolata', monospace; position:absolute; left:50px; top:350px; text-align:left; font-size: 11px; color:gray; line-height:0.9em; font-size: 10px; color:gray; margin-top:10px; }
-#side_bar { font-family: 'Open Sans Condensed', sans-serif; position:absolute; top: 150px; left: 50px; font-size: 12px; color:#666666; width:150px; line-height:1.2em; z-index: 1; }
-#side_bar h4 { font-weight: 700; }
-#logo { font-family: 'Norican', cursive; position: absolute; left: 50px; top: 5px; font-size: 2em; color: darkgray; }
+#navi { display: table; margin: 0 auto; }
+#side_bar { width:125px; height: 180px; margin-left: -275px; margin-top: 0px; display: flex; flex-flow: column wrap; display: -webkit-flex; -webkit-flex-flow: column wrap; }
+#side_bar div.item { z-index: 1; font-family: 'Open Sans Condensed', sans-serif; font-size: 12px; color:#666666; width: 50px; line-height:1.2em; }
+#side_bar div.item h4 { font-weight: 700; }
+#side_bar div.second { margin-top: 25px; }
+
+#header { display: table; margin: 0 auto; }
+#logo { font-family: 'Norican', cursive; margin-left: -350px; top: -15px; font-size: 2em; color: darkgray; display:inline-block; }
+#logo div.picture { text-align: right; margin-top: -15px; }
+#logo img { width: 50px; }
 #yes { font-family: 'Tangerine', cursive; font-size: 3em; color: red; }
 #ccw { font-family: 'Dancing Script', cursive; margin-top: -65px; font-size: 3em; color: black;  }
+#statement { float:left; position: absolute; width:60px; font-family: 'Inconsolata', monospace; top: 130px; text-align:right; font-size: 11px; color:gray; line-height:0.9em; font-size: 10px; color:gray; margin-top:10px; }
 
 #app {}
 
@@ -20,22 +27,21 @@
 #blog div.title { font-family: 'Open Sans Condensed', sans-serif; font-size: 1.8em; font-weight: 400; line-height: 0.95em; }
 #blog div.content { font-family: 'Nothing You Could Do', cursive; font-size: 0.8em; }
 
-#controls { position:relative; top:50px; }
-#buttons { width:620px; line-height: 2.2em; height: 500px; display: table; margin: 0 auto; margin-top: 180px; }
-#buttons div.arrow { font-family: 'Norican'; color: red; font-size: 3.5em; transform: scaleX(1.2); -webkit-transform: scaleX(1.2); -ms-transform: scaleX(1.2);}
-#buttons div.button { transform: rotate(-15deg); -webkit-transform: rotate(-15deg); -ms-transform: rotate(-15deg);}
-#buttons div.label { font-family: 'Tangerine'; font-size: 3.5em;  }
-#next { z-index: 1; }
-#prev { z-index: 1; }
+#controls { position:relative; top: -70px; }
+#buttons { width:550px; line-height: 2.2em; height: 500px; display: table; margin: 0 auto; margin-top: 180px; }
+#buttons div.arrow { font-family: 'Inconsolata'; color: orange; font-size: 2.5em; }
+#buttons div.label { font-family: 'Tangerine'; font-size: 3.5em; }
+#next { z-index: 1; width: 45%; padding-left: 25px; }
+#prev { z-index: 1; width: 45%; padding-right: 25px; }
 
 #yo { position: absolute; width: 158px; height: 190px; bottom: 10px; right: 10px; background: #FFF url("../i/yo_a.png") no-repeat 0}
 #yo:hover { background: #FFF url("../i/yo_b.png") no-repeat 0}
 
-.small { font-size: 18px; line-height: 0.9em; }
+.small { font-size: 0.5em; line-height: 0.9em; }
 .huge { font-size: 72px; line-height: 0.5em; }
 .on { display:block; cursor: pointer; }
 .off { display:none; }
-.left { float:left; text-align:left; }
-.right { float:right; text-align:right; }
-.link { cursor:pointer; color:#444386; }
-.link:hover { background-color: orange; } ;
+.left { float:left; text-align:right; }
+.right { float:right; text-align:left; }
+.link { cursor:pointer; color:#444386; padding-left: 8px; }
+.link:hover { background-color: sandybrown; }

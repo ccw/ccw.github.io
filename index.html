@@ -13,28 +13,38 @@
     -->
     </head>
 <body>
-    <div id="logo">
-        <div><span id="yes">yes</span><span style="color: black; font-size: 0.5em;">,</span> <span style="">I'm</span></div>  
-        <div id="ccw">ccw</div>
+    <div id="header">
+        <div id="logo">
+            <div class="wording">
+                <div><span id="yes">yes</span><span style="color: black; font-size: 0.5em;">,</span> <span style="">I'm</span></div>  
+                <div id="ccw">ccw</div>
+            </div>
+            <div class="picture">
+                <img src="i/ccw.gif"/>
+            </div>
+            <div id="statement">
+                <p>since<br/>20020907<br/>ver. 0.8<br/></p>        
+            </div>
+        </div>
+
     </div>
 
-    <div id="statement">
-        <p>since<br/>20020907<br/>ver. 0.8<br/></p>
-        <img src="i/ccw.gif" width="50%" />
-    </div>
-
-    <div id="side_bar">
-        <h4>about</h4>
-        <div class="link" onclick="window.location.href='http://about.me/ccw';">:: me</div>
-        <div class="link" onclick="window.location.href='http://ceks.cc';">:: ceks</div>
-        <h4>works</h4>
-        <div class="link" onclick="window.location.href='http://notes.ceks.cc';">:: notes</div>
-        <div class="link" onclick="window.location.href='http://github.com/ccw';">:: projects</div>
+    <div id="navi">
+        <div id="side_bar">
+            <div class="item">
+                <h4><span class="small">&#9654;</span>&nbsp;about</h4>
+                <div class="link" onclick="window.location.href='http://about.me/ccw';">:: me</div>
+                <div class="link" onclick="window.location.href='http://ceks.cc';">:: ceks</div>
+            </div>
+            <div class="item">
+                <h4><span class="small">&#9654;</span>&nbsp;works</h4>
+                <div class="link" onclick="window.location.href='http://notes.ceks.cc';">:: notes</div>
+                <div class="link" onclick="window.location.href='http://github.com/ccw';">:: projects</div>
+            </div>
+        </div>
     </div>
 
     <div id="body"></div>
-
-    <!-- <div id="yo"></div> -->
 
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/react/0.11.1/react-with-addons.js"></script>

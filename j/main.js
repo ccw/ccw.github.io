@@ -27,8 +27,7 @@ var Blog = React.createClass({
 var NaviButton = React.createClass({
     render: function() {
         return (
-            <div id="prev" className={this.props.align + ' ' + this.props.show + ' button'} onClick={this.props.handler}>
-                <div className="label">{this.props.label}</div>
+            <div id={this.props.label} className={this.props.align + ' ' + this.props.show + ' button'} onClick={this.props.handler}>
                 <div className="arrow">{this.props.icon}</div>
             </div>
         );
@@ -66,12 +65,12 @@ var App = React.createClass({
                                     show={this.state.currentIndex < indices.length - 1 ? 'on' : 'off'}
                                     align='left'
                                     label='prev'
-                                    icon='&#8636;' />
+                                    icon='&#8617;' />
                         <NaviButton handler={this.handleNext}
                                     show={this.state.currentIndex > 0 ? 'on' : 'off'}
                                     align='right'
                                     label='next'
-                                    icon='&#8640;' />
+                                    icon='&#8618;' />
                     </div>
                 </div>
 

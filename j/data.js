@@ -11,7 +11,7 @@ var blogs = {
         style: {
             width: '334px', 
             height: '400px',
-            background: '#FFF url("https://38.media.tumblr.com/271301eff3600516c92dec120f3d8c2b/tumblr_nbp5otcjXT1qzgyeso1_500.jpg") 20% 10% no-repeat'
+            background: '#FFF url("http://40.media.tumblr.com/271301eff3600516c92dec120f3d8c2b/tumblr_nbp5otcjXT1qzgyeso1_500.jpg") 20% 10% no-repeat'
         },
         title: {
             value: ['Yes, Ma\'am'],

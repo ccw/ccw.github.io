@@ -3,6 +3,7 @@
 var Blog = React.createClass({
     render: function() {
         var blog = blogs[this.props.blogID];
+
         return (
             <div id="diary">
                 <div id="wrap"><div id="block">
@@ -22,13 +23,20 @@ var Blog = React.createClass({
 
 var Gist = React.createClass({
     render: function() {
-        var gist = gists[this.props.gistID];
-        if (!gist.content) {
-            gist.content = (function() { return $.ajax({type: "GET",
-                                                        url: gist.raw_url,
-                                                        async: false }); }()).responseText;
+        const gist = gists[this.props.gistID];
+        let content = gist.content;
+        let language = gist.language ? gist.language.toLowerCase() : 'none';
+
+        if (!content) {
+            content = (function() { return $.ajax({ type: "GET",
+                                                    url: gist.raw_url,
+                                                    async: false }); }()).responseText;
         }
-        var language = gist.language ? gist.language.toLowerCase() : 'none';
+
+        if (Prism.languages[language]) {
+            content = Prism.highlight(content, Prism.languages[language], language);
+        }
+
         return (
             <div id="gist">
                 <div id="wrap"><div id="block">
@@ -36,9 +44,8 @@ var Gist = React.createClass({
                         <div className="title">
                             <a href={gist.url}>{gist.description}</a>
                         </div>
-                        <pre className={'language-' + language}>
-                            <code className={'language-' + language}>
-                                {gist.content}
+                        <pre>
+                            <code className={'language-' + language} dangerouslySetInnerHTML={{__html: content}}>
                             </code>
                         </pre>
                     </div>
@@ -125,7 +132,10 @@ var App = React.createClass({
             content = <Gist gistID={contentID} />;
         }
         return (
-            <div id="app">
+            <div id="app">                
+
+                {content}
+
                 <div id="controls">
                     <div id="buttons">
                         <NaviButton handler={this.handlePrevious}
@@ -156,11 +166,9 @@ var App = React.createClass({
                     </div>
                 </div>
 
-                {content}
-
             </div>
         );
     }
 });
 
-React.renderComponent(<App />, document.getElementById('body'));
+React.render(<App />, document.getElementById('body'));

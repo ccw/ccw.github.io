@@ -38,7 +38,7 @@ var blogs = {
         style: {
             width: '334px', 
             height: '400px',
-            background: '#FFF url("http://lh4.ggpht.com/_z-SGyFvIzXc/ShO-EFJcjgI/AAAAAAAAAkg/4XiVMMwgu64/s400/IMG_0117.JPG") no-repeat 0'
+            background: '#FFF url("https://lh4.ggpht.com/_z-SGyFvIzXc/ShO-EFJcjgI/AAAAAAAAAkg/4XiVMMwgu64/s400/IMG_0117.JPG") no-repeat 0'
         },
         title: {
             value: ['Little Alley'],
@@ -66,7 +66,7 @@ var blogs = {
         style: {
             width: '334px', 
             height: '400px',
-            background: '#FFF url("http://lh5.ggpht.com/_z-SGyFvIzXc/ShO9_MKBxHI/AAAAAAAAAkc/1LgiPHjaoaU/s400/IMG_0114.JPG") no-repeat 0'
+            background: '#FFF url("https://lh5.ggpht.com/_z-SGyFvIzXc/ShO9_MKBxHI/AAAAAAAAAkc/1LgiPHjaoaU/s400/IMG_0114.JPG") no-repeat 0'
         },
         title: {
             value: [' Ain\'t Finished Yet'],
@@ -92,7 +92,7 @@ var blogs = {
         style: {
             width: '334px', 
             height: '400px',
-            background: '#FFF url("http://lh5.ggpht.com/_z-SGyFvIzXc/SgnB0qi9KJI/AAAAAAAAAjg/T0N7Z_lHPHo/s400/IMG_0113.JPG") no-repeat 0'
+            background: '#FFF url("https://lh5.ggpht.com/_z-SGyFvIzXc/SgnB0qi9KJI/AAAAAAAAAjg/T0N7Z_lHPHo/s400/IMG_0113.JPG") no-repeat 0'
         },
         title: {
             value: [' On the Way Home'],
@@ -117,7 +117,7 @@ var blogs = {
         style: {
             width: '307px', 
             height: '400px',
-            background: '#FFF url("http://lh4.ggpht.com/_z-SGyFvIzXc/SgokHHF1vdI/AAAAAAAAAkA/ajQcxcp44vg/s400/IMG_0083.JPG") no-repeat 0'
+            background: '#FFF url("https://lh4.ggpht.com/_z-SGyFvIzXc/SgokHHF1vdI/AAAAAAAAAkA/ajQcxcp44vg/s400/IMG_0083.JPG") no-repeat 0'
         },
         title: {
             value: [React.DOM.br(), 'Slow Waves'],
@@ -144,7 +144,7 @@ var blogs = {
         style: {
             width: '400px', 
             height: '400px',
-            background: '#FFF url("http://lh6.ggpht.com/_z-SGyFvIzXc/SgrfFRFquAI/AAAAAAAAAkU/nhMSXNcgdKA/s400/IMG_0022.JPG") no-repeat 0'
+            background: '#FFF url("https://lh6.ggpht.com/_z-SGyFvIzXc/SgrfFRFquAI/AAAAAAAAAkU/nhMSXNcgdKA/s400/IMG_0022.JPG") no-repeat 0'
         },
         title: {
             value: [React.DOM.br(), 'The Monkey from NYU'],
@@ -173,7 +173,7 @@ var blogs = {
         style: {
             width: '400px', 
             height: '300px',
-            background: '#FFF url("http://lh4.ggpht.com/_z-SGyFvIzXc/Sgrhs9ZiKpI/AAAAAAAAAkY/lnZr8E4JJ9I/s400/IMG_0011.JPG") no-repeat 0'
+            background: '#FFF url("https://lh4.ggpht.com/_z-SGyFvIzXc/Sgrhs9ZiKpI/AAAAAAAAAkY/lnZr8E4JJ9I/s400/IMG_0011.JPG") no-repeat 0'
         },
         title: {
             value: [React.DOM.br(), 'Blue Sky'],
